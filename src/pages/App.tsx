@@ -1,10 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// import Home from './Home';
-// import Analysis from './Analysis';
-// import Search from './Search';
-// import All from './All';
+
+import Main from './Main';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,10 +17,7 @@ const App = () => {
           animation: 'fade',
           animationDuration: 200,
         }}>
-        {/* <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Analysis" component={Analysis} />
-        <Stack.Screen name="Search" component={Search} />
-        <Stack.Screen name="All" component={All} /> */}
+        <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </NavigationContainer>
   );
